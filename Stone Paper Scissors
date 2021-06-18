@@ -1,0 +1,30 @@
+from random import  randint
+
+l=["stone","paper","scissors"]
+
+computer = l[randint(0,2)]
+
+player = False
+
+while player == False :
+    pla=input("write your shot s-stone S-scissors p-paper-")
+    if computer ==pla:
+        print("ohh its a tie ")
+    elif pla== "s":
+        if computer == "paper":
+            print("ohh you loss stone catch by computer")
+        else:
+            print("ohh you won")
+    elif pla =="p":
+        if computer == "scissors":
+            print("ohh your paper cutted by   computer")
+        else:
+            print("ohh you won it wow ")
+    elif pla == "ss":
+        if computer == "stone":
+            print("ohh your scissor broken by computer dont cry ")
+        else:
+            print("ohh you won it wow ")
+    else:
+        print("opps you enterd wrong word")
+    computer = randint(0, 2)
